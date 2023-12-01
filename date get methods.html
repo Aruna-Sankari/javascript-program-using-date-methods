@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Date Get Methods</title>
+</head>
+<body>
+<h2>Date Get Methods</h2>
+<p>getDate()</p>
+<p>getDay()</p>
+<p>getFullYear()</p>
+<p>getHours()</p>
+<p>getMilliseconds()</p>
+<p>getMinutes()</p>
+<p>getMonth()</p>
+<p>getSeconds()</p>
+<p>getTime()</p>
+<script>
+const a=new Date("2023-09-17");                                               
+console.log(a.getDate());                                                                              //get the day as a number(1-31)
+
+const c=new Date("2023-09-17");                                        
+const d=c.getDay();
+console.log(d);     
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const t = new Date("2021-09-17");
+const day = days[t.getDay()];       
+console.log(day);                                                                 //get the weekday  as a number (0-6)
+
+const e=new Date("2023-09-17");                                     
+const f=e.getFullYear();
+console.log(f);                                                                              //get the four digit year(yyyy)
+
+const g=new Date("2023-09-17");                                       
+<!-- const h=g.getHours(); -->
+console.log(g.getHours());                                                                         //get the hour(0-23)
+
+const i=new Date("2023-09-17");                                      
+const j=i.getMilliseconds();
+console.log(j);                                                                            //get the milliseconds(0-999)
+
+const k=new Date("2023-09-17");                               
+const l=k.getMinutes();
+console.log(l);                                                                         //get the minutes(0-59)     
+
+const m=new Date();                          
+m.getMonth();
+console.log(m);                                                                    
+
+const months=["january","February","March","April","May","June","July","August","September","October","November","December"];
+const month1=new Date("2023-09-17");
+const month2=months[month1.getMonth()];
+console.log(month2);                                                          //get the month(0-11)
+
+const o=new Date("2023-09-17");
+const p=o.getSeconds();
+console.log(p);                                                                     //get the seconds(0-59)
+
+const q=new Date("2023-09-17");
+const r=q.getTime();
+console.log(r);                                                                       //get the time(milliseconds since January 1,1970)                                         
+</script>
+</body>
+</html>
